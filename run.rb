@@ -7,5 +7,11 @@ require_relative "./models/restaurant"
 # make sure you initialize them with the correct data 
   # (how does a menu item know which restaurant it belongs to?)
 
+mcdonalds = Restaurant.new("McDonald's", "American")
+tacobell = Restaurant.new("Taco Bell", "Mexican")
+
+mi1 = MenuItem.new(mcdonalds, "Burger", 10)
+mi2 = MenuItem.new(tacobell, "Tacos", 7)
+
 binding.pry
 "pls"
